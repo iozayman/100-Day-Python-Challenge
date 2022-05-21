@@ -12,6 +12,6 @@ Bill = input("What was the total bill?\n$")
 Tip = input("How much tip would you like to give?\n{Example 10, 12 or 15 DONT BE SELFISH we can calculate more}\n%")
 People = input("How many people to split the bill?\n")
 
-Result = round((float(Bill) / int(People)) * float(int(Tip) / 100 + 1), 2)
+Lastr = ("{:.2f}".format((float(Bill) / int(People)) * float(int(Tip) / 100 + 1)))
 
-print(Result)
+print(f"${Lastr}")
